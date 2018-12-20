@@ -16,7 +16,6 @@ app.get('/show', function(req, res){
     if (req.body === undefined){
         res.redirect(302, "index"); // redirect the user if he tries without enter any data
     }
-    res.render('show')
 })
 
 app.post('/show', urlencodedParser, function (req, res) {
